@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		15C4831826D1CE230074E1ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4831726D1CE230074E1ED /* ContentView.swift */; };
 		15C4831A26D1CE260074E1ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C4831926D1CE260074E1ED /* Assets.xcassets */; };
 		15C4831D26D1CE260074E1ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C4831C26D1CE260074E1ED /* Preview Assets.xcassets */; };
+		15EA0C0026D1D38600C9A3E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15EA0BFF26D1D38600C9A3E6 /* GoogleService-Info.plist */; };
+		50761728B4B577D4A28F7B6C /* Pods_Waterlicious_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173C0FB35F8C1CBED2B7C4E2 /* Pods_Waterlicious_2_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,10 @@
 		15C4831926D1CE260074E1ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15C4831C26D1CE260074E1ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15C4831E26D1CE260074E1ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15EA0BFF26D1D38600C9A3E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		173C0FB35F8C1CBED2B7C4E2 /* Pods_Waterlicious_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waterlicious_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD11A5F19E52D4ABF7645753 /* Pods-Waterlicious 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterlicious 2.0.debug.xcconfig"; path = "Target Support Files/Pods-Waterlicious 2.0/Pods-Waterlicious 2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8BE562F8D3E6F189FCA28E /* Pods-Waterlicious 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waterlicious 2.0.release.xcconfig"; path = "Target Support Files/Pods-Waterlicious 2.0/Pods-Waterlicious 2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50761728B4B577D4A28F7B6C /* Pods_Waterlicious_2_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,8 @@
 			children = (
 				15C4831426D1CE230074E1ED /* Waterlicious 2.0 */,
 				15C4831326D1CE230074E1ED /* Products */,
+				FA3F863C48C06C9843E41AD5 /* Pods */,
+				1F243C634FF68035A6577D13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +64,7 @@
 				15C4831526D1CE230074E1ED /* Waterlicious_2_0App.swift */,
 				15C4831726D1CE230074E1ED /* ContentView.swift */,
 				15C4831926D1CE260074E1ED /* Assets.xcassets */,
+				15EA0BFF26D1D38600C9A3E6 /* GoogleService-Info.plist */,
 				15C4831E26D1CE260074E1ED /* Info.plist */,
 				15C4831B26D1CE260074E1ED /* Preview Content */,
 			);
@@ -69,6 +79,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1F243C634FF68035A6577D13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				173C0FB35F8C1CBED2B7C4E2 /* Pods_Waterlicious_2_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3F863C48C06C9843E41AD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD11A5F19E52D4ABF7645753 /* Pods-Waterlicious 2.0.debug.xcconfig */,
+				AD8BE562F8D3E6F189FCA28E /* Pods-Waterlicious 2.0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15C4832126D1CE260074E1ED /* Build configuration list for PBXNativeTarget "Waterlicious 2.0" */;
 			buildPhases = (
+				FF500890FFB02868DB8C82FB /* [CP] Check Pods Manifest.lock */,
 				15C4830E26D1CE230074E1ED /* Sources */,
 				15C4830F26D1CE230074E1ED /* Frameworks */,
 				15C4831026D1CE230074E1ED /* Resources */,
+				ABCC1AD29091EB3A0DC68A08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +157,53 @@
 			files = (
 				15C4831D26D1CE260074E1ED /* Preview Assets.xcassets in Resources */,
 				15C4831A26D1CE260074E1ED /* Assets.xcassets in Resources */,
+				15EA0C0026D1D38600C9A3E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABCC1AD29091EB3A0DC68A08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Waterlicious 2.0/Pods-Waterlicious 2.0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Waterlicious 2.0/Pods-Waterlicious 2.0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Waterlicious 2.0/Pods-Waterlicious 2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF500890FFB02868DB8C82FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Waterlicious 2.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15C4830E26D1CE230074E1ED /* Sources */ = {
@@ -264,6 +336,7 @@
 		};
 		15C4832226D1CE260074E1ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD11A5F19E52D4ABF7645753 /* Pods-Waterlicious 2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +359,7 @@
 		};
 		15C4832326D1CE260074E1ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8BE562F8D3E6F189FCA28E /* Pods-Waterlicious 2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
